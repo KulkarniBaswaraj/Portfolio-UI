@@ -649,6 +649,24 @@ figcaption {
       fill: #fff;
       font-size: 30px;
 }
+.app-sidebar__content + .app-sidebar__footer {
+  display: none;
+}
+.app-sidebar__content.active + .app-sidebar__footer {
+  display: block;
+}
+.app-sidebar__content #nav-links-list {
+  height: 0px;
+  width: 0px;
+  overflow: hidden;
+  transition: .3s linear all;
+}
+.app-sidebar__content.active #nav-links-list {
+  height: 270px;
+  width: auto;
+  overflow: auto;
+  transition: .3s linear all;
+}
 }
 .app-sidebar__container[data-v-79992413] {
   background:

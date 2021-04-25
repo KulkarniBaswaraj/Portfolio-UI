@@ -5,8 +5,7 @@
       <h1 class="homepage-heading">Hello!</h1>
       <p class="homepage-intro">
         My name is <span class="h-fw800">Kulkarni Baswaraj</span>, and I'm a
-        Senior Front-end Developer working remotely out of Albuquerque, New
-        Mexico!
+        Senior Front-end Developer. Currently working in Wipro
       </p>
       <div class="homepage-cta">
         <a href="#/about" class=""

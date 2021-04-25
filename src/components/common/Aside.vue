@@ -11,7 +11,7 @@
             <p>Front-end Developer</p>
           </div>
         </div>
-        <div class="mobile-menu">
+        <div class="mobile-menu" @click="toggleMenu">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -24,9 +24,7 @@
           </svg>
         </div>
       </div>
-      <div
-        style="overflow: hidden; transition-property: height; height: 271px; transition-duration: 300ms;"
-      >
+      <div id="nav-links-list">
         <nav class="app-sidebar__nav">
           <ul>
             <li>
@@ -143,7 +141,7 @@
     <div class="app-sidebar__footer">
       <ul>
         <li>
-          <a href="https://www.twitter.com/drewrawitz" target="_blank"
+          <a href="https://www.twitter.com/k_baswaraj" target="_blank"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -163,7 +161,7 @@
         </li>
         <li>
           <a
-            href="http://www.linkedin.com/pub/drew-rawitz/78/97b/2b7"
+            href="https://www.linkedin.com/in/kulkarni-baswaraj-128333163"
             target="_blank"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
@@ -184,7 +182,7 @@
           ></a>
         </li>
         <li>
-          <a href="https://www.instagram.com/drewrawitz" target="_blank"
+          <a href="https://www.instagram.com/kulkarnibaswaraj" target="_blank"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -204,7 +202,7 @@
           ></a>
         </li>
         <li>
-          <a href="https://www.github.com/drewrawitz" target="_blank"
+          <a href="https://www.github.com/kulkarnibaswaraj" target="_blank"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -228,7 +226,29 @@
 </template>
 
 <script>
-export default {};
+export default {
+  components: {},
+  data() {
+    return {
+      refCount: 0,
+      isLoading: false,
+    };
+  },
+  methods: {
+    toggleMenu() {
+        const menuList = document.getElementsByClassName("app-sidebar__content")[0];
+        if(!menuList.classList.contains("active")) {
+            menuList.classList.add("active");
+        } else {
+            menuList.classList.remove("active");
+        }
+    },
+  },
+  mounted() {},
+  beforeDestroy() {},
+};
 </script>
 
-<style></style>
+<style>
+
+</style>
