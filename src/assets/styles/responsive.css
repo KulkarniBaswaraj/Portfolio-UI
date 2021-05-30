@@ -1,0 +1,120 @@
+@media (max-width: 767px) {
+    .app-wrapper {
+        padding-top: 100px;
+    }
+    .bullet-main-wrapper {
+        flex-direction: column !important;
+    }
+    .bullet-wrap {
+        margin-bottom: 25px;
+    }
+    .homepage-content {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .color-picker {
+        display: none;
+    }
+    .app-sidebar {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        right: 0;
+        z-index: 200;
+        width: calc(100% - 40px);
+        margin: auto;
+    }
+    .app-sidebar__header {
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    .app-sidebar__header,
+    .header__left {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    .mobile-menu svg {
+        fill: #fff;
+        font-size: 30px;
+    }
+    .logo-wrapper {
+        margin: 0;
+        width: 80px;
+        height: 80px;
+    }
+}
+@media (min-width: 768px) {
+    .app-wrapper {
+        display: grid;
+        grid-template-areas: "sidebar content";
+        grid-template-columns: minmax(200px, 17vw) 1fr;
+    }
+    .profile p {
+        margin-bottom: 20px;
+    }
+    body {
+        height: 100vh;
+    }
+    #app {
+        max-height: 850px;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .app-sidebar__container {
+        position: fixed;
+        width: 17vw;
+        min-width: 200px;
+        height: calc(100vh - 40px);
+        max-height: 850px;
+    }
+}
+@media (max-width: 500px) {
+    #app {
+        margin: 10px;
+    }
+    .app-content {
+        padding: 3px;
+    }
+    .container {
+        padding: 15px;
+    }
+    .app-sidebar {
+        width: calc(100% - 20px);
+        top: 10px;
+    }
+}
+@media (max-width: 644px) {
+    .workflow-group__list > :not(:last-child) {
+        margin-bottom: 45px;
+    }
+}
+@media (min-width: 645px) {
+    .workflow-group__list {
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+@media (min-width: 600px) {
+    .image-right {
+        float: right;
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 599px) {
+    .image-right figure {
+        text-align: left;
+    }
+}
+@media (max-width: 599px) {
+    .image-right figcaption {
+        margin-left: 0;
+    }
+}

@@ -2,29 +2,61 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Signin from "../components/auth/Signin.vue";
 import Home from "../components/home/Home.vue";
-
+import About from "../components/about/About.vue";
+import Skills from "../components/skills/Skills.vue";
+import Contact from "../components/contact/Contact.vue";
+import Experience from "../components/experience/Experience.vue";
 
 Vue.use(VueRouter);
 const routes = [
   {
     path: "/login",
     name: "login",
-    component: Signin
+    component: Signin,
   },
   {
     path: "/home",
     name: "home",
-    component: Home
+    component: Home,
   },
   {
-    path: '*',
-    redirect: "/home"
-  }
+    path: "/about",
+    name: "about",
+    component: About,
+  },
+  {
+    path: "/skills",
+    name: "skills",
+    component: Skills,
+  },
+  {
+    path: "/experience",
+    name: "experience",
+    component: Experience,
+  },
+  {
+    path: "/contact",
+    name: "contact",
+    component: Contact,
+  },
+  {
+    path: "*",
+    redirect: "/home",
+  },
 ];
 
 const router = new VueRouter({
-  routes
+  routes,
 });
+
+router.afterEach((to, from) => {
+  if ( document.querySelector(".app-sidebar__content") &&
+    document.querySelector(".app-sidebar__content").classList.contains("active")
+  ) {
+    document.querySelector(".app-sidebar__content").classList.remove("active");
+  }
+});
+
 /*
 const routes = [
   {

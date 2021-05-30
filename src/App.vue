@@ -53,6 +53,7 @@ export default {
 <style>
 @import "assets/styles/main.css";
 @import "assets/styles/custom.css";
+@import "assets/styles/responsive.css";
 
 /* @import "assets/styles/theme.css"; */
 </style>

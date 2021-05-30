@@ -47,6 +47,24 @@ export default {
       },
       rmRef(obj) {
          return JSON.parse(JSON.stringify(obj));
-      }
+      },
+      getTotalExp() {
+         const joiningDay = new Date(2015, 6, 1);
+         const today = new Date();
+   
+         let resultMonth = 0; 
+         let resultYear = 0
+   
+         if(today.getMonth() < joiningDay.getMonth()) {
+           const borrowMonths = today.getMonth() + 12;
+           resultMonth = borrowMonths - joiningDay.getMonth(); 
+           const reduce1year   = today.getFullYear() - 1;
+           resultYear = reduce1year - joiningDay.getFullYear()
+         } else {
+           resultMonth = today.getMonth() - joiningDay.getMonth();
+           resultYear = today.getFullYear() - joiningDay.getFullYear();
+         }
+         return `${resultYear}${resultMonth > 0 ? '.'+resultMonth : ''}`; 
+       }
    }
 }

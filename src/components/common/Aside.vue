@@ -28,8 +28,8 @@
         <nav class="app-sidebar__nav">
           <ul>
             <li>
-              <a href="#/" class="router-link-exact-active router-link-active"
-                ><svg
+              <router-link :to="{ path: 'home' }">
+                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -46,12 +46,12 @@
                   ></path>
                   <path d="M9 22V12h6v10"></path>
                 </svg>
-                <span>Home</span></a
-              >
+                <span>Home</span>
+              </router-link>
             </li>
             <li>
-              <a href="#/about" class=""
-                ><svg
+              <router-link :to="{ path: 'about' }">
+                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -66,12 +66,12 @@
                   <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                   <circle cx="12" cy="7" r="4"></circle>
                 </svg>
-                <span>About</span></a
-              >
+                <span>About</span>
+              </router-link>
             </li>
             <li>
-              <a href="#/workflow" class=""
-                ><svg
+              <router-link :to="{ path: 'skills' }">
+                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -88,12 +88,12 @@
                   ></path>
                   <path d="M2.32 6.16L12 11l9.68-4.84M12 22.76V11"></path>
                 </svg>
-                <span>My Workflow</span></a
-              >
+                <span>Skills</span>
+              </router-link>
             </li>
             <li>
-              <a href="#/plugins" class=""
-                ><svg
+              <router-link :to="{ path: 'experience' }">
+                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
                   height="24"
@@ -109,11 +109,11 @@
                     d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"
                   ></path>
                 </svg>
-                <span>Plugins</span></a
+                <span>Experience</span></router-link
               >
             </li>
             <li>
-              <a href="#/contact" class=""
+              <router-link :to="{ path: 'contact' }"
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -131,7 +131,7 @@
                   ></path>
                   <path d="M22 6l-10 7L2 6"></path>
                 </svg>
-                <span>Contact</span></a
+                <span>Contact</span></router-link
               >
             </li>
           </ul>
@@ -236,12 +236,14 @@ export default {
   },
   methods: {
     toggleMenu() {
-        const menuList = document.getElementsByClassName("app-sidebar__content")[0];
-        if(!menuList.classList.contains("active")) {
-            menuList.classList.add("active");
-        } else {
-            menuList.classList.remove("active");
-        }
+      const menuList = document.getElementsByClassName(
+        "app-sidebar__content"
+      )[0];
+      if (!menuList.classList.contains("active")) {
+        menuList.classList.add("active");
+      } else {
+        menuList.classList.remove("active");
+      }
     },
   },
   mounted() {},
@@ -249,6 +251,14 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.app-sidebar__footer a,
+  a {
+    color: #d69fa2;
+  }
+
+  .app-sidebar__footer a:hover {
+    color:white;
+  }
 
 </style>

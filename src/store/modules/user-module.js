@@ -4,22 +4,26 @@ import axios from "../../_http/axios-http";
 
 Vue.use(Vuex)
 
-const state = {
-  usersList: []
+const state = () => ({
+  usersList: [],
+  expData: []
+})
+
+const getters = {
+  getExpData(state) {
+    return state.expData;
+  }
 }
-const getters = {}
 const mutations = {
-  userData(state, res) {
-    if(res.status == 1) {
-      state.usersList = res.data.result;
-    }
+  setExpData(state, res) {
+    state.expData = res
   }
 }
 const actions = {
-  async getAllUsers({ commit }, payload) {
+  async fetchExpData({ commit }) {
     try {
-      const res = await axios.post('/usersList', payload);
-      commit('userData', res);
+      const res = await axios.get('/JSON/experience.json');
+      commit('setExpData', res);
       return res
     }
     catch (err) {

@@ -4,7 +4,7 @@ import Bus from '../_utils/eventbus';
 
 const origin = location.origin;
 const local = "http://localhost:8080";
-const baseUrl = origin == local ? "http://localhost:3000" : origin;
+const baseUrl = origin == local ? "http://localhost:8080" : origin;
 
 
 // const baseUrl = "https://indflor.herokuapp.com";
