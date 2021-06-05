@@ -8,7 +8,7 @@
           </div>
           <div class="profile">
             <h2>Kulkarni Baswaraj</h2>
-            <p>Front-end Developer</p>
+            <p>Frontend Developer</p>
           </div>
         </div>
         <div class="mobile-menu" @click="toggleMenu">
