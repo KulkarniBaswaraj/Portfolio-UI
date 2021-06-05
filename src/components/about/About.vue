@@ -12,12 +12,12 @@
       <div class="image-right">
         <figure>
           <img
-            src="/static/img/movie_time.jpg"
+            src="/static/img/my_pic.jpg"
             alt="Kulkarni Baswaraj"
             style="max-width: 200px; cursor: pointer;"
           />
           <figcaption>
-            Me,cousin and sister @theater!
+            On river time at my village !!
           </figcaption>
         </figure>
       </div>

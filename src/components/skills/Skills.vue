@@ -113,6 +113,10 @@ export default {
           name: "UI design",
           percentage: "90%",
         },
+        {
+          name: "Responsive design",
+          percentage: "90%",
+        },
                        {
           name: "JQuery",
           percentage: "80%",
