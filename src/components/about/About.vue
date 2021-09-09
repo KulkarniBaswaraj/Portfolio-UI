@@ -23,7 +23,7 @@
       </div>
       <p>
         My name is <strong>Kulkarni Baswaraj</strong>, I’m a Senior Frontend Developer
-        currently working in Wipro Limited, Hyderabad! I've spent
+        currently working in Publicis Sapient, Bengaluru! I've spent
         the last {{this.getTotalExp()}} years as a professional web developer where I specialize in
         transforming beautiful designs into full-fledged interactive web
         applications for various clients all around the world.
