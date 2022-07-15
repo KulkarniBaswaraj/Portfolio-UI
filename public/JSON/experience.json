@@ -1,12 +1,12 @@
 [{
     "heading": "Professional Summary",
     "keyPoints": [
-        "years of experience in Web Development and UI Design of corporate, intranet, business, consumer, and nonprofit websites",
-        "Professional understanding of System development life cycle (SDLC) as well as various phases such as Analysis Design, Development and Testing",
+        "years of experience in Web Development and UI Design of corporate, intranet, business, consumer and nonprofit websites",
+        "Professional understanding of System development life cycle (SDLC) as well as various phases such as Analysis, Design, Development and Testing",
         "Developed several SPA (Single Page Applications) in JavaScript library like AngularJS Angular2  and VueJS",
         "Expert in HTML5/CSS3 development and have experience in Responsive design using media queries and Bootstrap CSS framework",
         "Expert in developing User Interface (UI) applications and professional web applications using HTML5, CSS3, JavaScript, JSON, JQuery, Ajax, AngularJS, VueJS and Angular 2+",
         "Expertise in Scrum, Agile software development model, and well versed in using various IDEs like Microsoft Visual Studio, Sublime Text and Adobe Dreamweaver for faster application development",
-        "Strong knowledge in Bootstrap 3, Bootstrap 4, ES5, ES6 and Object Oriented JavaScript."
+        "Strong knowledge in Bootstrap 3, Bootstrap 4, ES5, ES6, Typescript and Object Oriented JavaScript."
     ]
 }]
