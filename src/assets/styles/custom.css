@@ -383,11 +383,12 @@ figcaption {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(/static/img/profile.jpeg);
-    background-position: top;
-    background-size: cover;
+    background-image: url(/static/img/my-dp.jpeg);
+    background-position: center;
+    background-size: 132%;
     border-radius: 50%;
     border: 3px solid var(--primary);
+    background-repeat: no-repeat;
 }
 .profile {
     color: #fff;

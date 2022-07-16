@@ -137,7 +137,7 @@ export default {
 <style scoped>
 .bullet-main-wrapper {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   text-align: center;
   flex-direction: row;
 }
