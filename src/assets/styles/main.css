@@ -702,7 +702,8 @@ figcaption {
     width: 17vw;
     min-width: 200px;
     height: calc(100vh - 40px);
-    max-height: 850px
+    max-height: 850px;
+    z-index: 12;
 }
 }
 .app-sidebar__footer ul {
@@ -859,6 +860,12 @@ a svg {
 .homepage-content {
     padding-top: 120px;
     padding-bottom: 120px
+}
+.img-box {
+  width: 100% !important;
+    max-width: 100% !important;
+    margin: 0px !important;
+    float: none !important;
 }
 }
 .homepage-heading {

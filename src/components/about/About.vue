@@ -9,15 +9,14 @@
     </section>
     <div class="container">
       <h2>About Me</h2>
-      <div class="image-right">
-        <figure>
+      <div class="img-box">
+        <figure @click="showImg()">
           <img
             src="/static/img/my_pic.jpg"
             alt="Kulkarni Baswaraj"
-            style="max-width: 200px; cursor: pointer;"
           />
           <figcaption>
-            On river time at my village !!
+            Beautiful evening on river bed in village!!
           </figcaption>
         </figure>
       </div>
@@ -47,6 +46,9 @@
         <p>★ ★ ★ ★ ★</p>
       </div>
     </div>
+    <modal name="pic" :adaptive="true" class="river-pic">
+      <img src="/static/img/my_pic.jpg">
+    </modal>
   </div>
 </template>
 
@@ -55,6 +57,11 @@ import mixins from "../../_utils/mixins";
 
 export default {
   mixins: [mixins],
+  methods: {
+    showImg() {
+      this.$modal.show('pic')
+    }
+  },
 
 };
 </script>

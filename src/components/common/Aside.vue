@@ -4,7 +4,7 @@
       <div class="app-sidebar__header">
         <div class="header__left">
           <div class="logo-wrapper">
-            <span class="logo"></span>
+            <span class="logo" @click="showProfile()"></span>
           </div>
           <div class="profile">
             <h2>Kulkarni Baswaraj</h2>
@@ -203,6 +203,9 @@
         </li>
       </ul>
     </div>
+    <modal name="profile" :width="371" :height="313">
+      <img src="../../../public/static/img/my-dp.jpeg">
+    </modal>
   </div>
 </template>
 
@@ -226,20 +229,24 @@ export default {
         menuList.classList.remove("active");
       }
     },
+    showProfile() {
+      this.$modal.show('profile')
+    }
   },
-  mounted() {},
+  mounted() {
+    
+  },
   beforeDestroy() {},
 };
 </script>
 
 <style scoped>
 .app-sidebar__footer a,
-  a {
-    color: #d69fa2;
-  }
+a {
+  color: #d69fa2;
+}
 
-  .app-sidebar__footer a:hover {
-    color:white;
-  }
-
+.app-sidebar__footer a:hover {
+  color: white;
+}
 </style>
